@@ -3,59 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>프리미엄 로또 번호 생성기</title>
+  <title>프리미엄 로또 번호 생성기 - 행운을 부르는 번호 추출</title>
+  <meta name="description" content="통계 기반 로또 번호 생성 서비스. 행운의 숫자를 추출하고 최신 로또 정보를 확인하세요.">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1008485503204041"
      crossorigin="anonymous"></script>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <div class="lotto-container">
-    <h1>로또 번호 생성기</h1>
-    <div id="lottoNumbers" class="numbers">
-      <!-- 번호가 여기에 표시됩니다 -->
-    </div>
-    <div class="controls">
-      <button onclick="generateLottoNumbers()">번호 생성하기</button>
-      <button id="themeToggle" class="theme-toggle" onclick="toggleTheme()">🌙 다크 모드</button>
-    </div>
-  </div>
+  <header>
+    <nav>
+      <a href="/" class="logo">LottoPremium</a>
+      <ul class="nav-links">
+        <li><a href="/">홈</a></li>
+        <li><a href="#articles">로또 가이드</a></li>
+        <li><a href="/about.html">소개</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="form-container">
-    <h2>제휴 및 문의</h2>
-    <form action="https://formspree.io/f/xlgvkvbp" method="POST">
-      <div class="form-group">
-        <label for="email">이메일 주소</label>
-        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+  <main>
+    <section class="lotto-container">
+      <h1>로또 번호 생성기</h1>
+      <p>오늘의 행운을 시험해보세요. 랜덤 추출 알고리즘을 통해 6개의 숫자를 제공합니다.</p>
+      <div id="lottoNumbers" class="numbers">
+        <!-- 번호가 여기에 표시됩니다 -->
       </div>
-      <div class="form-group">
-        <label for="message">문의 내용</label>
-        <textarea id="message" name="message" rows="4" placeholder="문의하실 내용을 입력해주세요." required></textarea>
+      <div class="controls">
+        <button onclick="generateLottoNumbers()">행운의 번호 생성하기</button>
+        <button id="themeToggle" class="theme-toggle" onclick="toggleTheme()">🌙 다크 모드</button>
       </div>
-      <button type="submit" class="submit-btn">문의 보내기</button>
-    </form>
-  </div>
+    </section>
 
-  <div id="comments-container" class="comments-container">
-    <div id="disqus_thread"></div>
-    <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://product1-4.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
+    <section id="articles" class="article-section">
+      <article>
+        <h2>로또 당첨 확률을 높이는 방법? 통계로 보는 진실</h2>
+        <p>많은 사람들이 로또 번호를 선택할 때 자신만의 비법을 가지고 있습니다. 꿈에서 본 숫자, 기념일, 혹은 직전 회차에 나오지 않았던 숫자를 고르기도 합니다. 하지만 수학적으로 모든 조합의 당첨 확률은 동일합니다. 통계학적으로 의미 있는 접근법은 '균형'입니다. 홀수와 짝수의 비율을 3:3 또는 2:4로 맞추거나, 숫자의 총합이 특정 범위(예: 120~170)에 들어오도록 구성하는 방식이 자주 언급됩니다.</p>
+      </article>
+
+      <article>
+        <h2>로또 6/45, 번호 선택 시 고려해야 할 팁</h2>
+        <p>번호를 선택할 때 가장 피해야 할 습관 중 하나는 '연속된 숫자'를 너무 많이 포함하는 것입니다. 1, 2, 3, 4, 5, 6과 같은 조합은 이론상 가능하지만 실제 당첨 기록에서는 매우 드뭅니다. 또한, 이전 회차 당첨 번호가 그대로 다시 나올 확률도 매우 낮습니다. 가장 추천하는 방식은 과거 데이터를 참고하되, 지나치게 한쪽으로 치우치지 않는 무작위성을 유지하는 것입니다.</p>
+      </article>
+
+      <article>
+        <h2>건전한 복권 문화와 책임감 있는 게임</h2>
+        <p>복권은 일상의 작은 즐거움이자 희망이 되어야 합니다. 과도한 몰입은 가계 경제에 부담을 줄 수 있으므로, 자신이 감당할 수 있는 소액으로 즐기는 것이 중요합니다. 로또는 당첨될 수도 있지만, 낙첨될 확률이 훨씬 높다는 점을 명확히 인지해야 합니다. 수익금의 일부가 사회 공헌 활동과 공익 사업에 쓰인다는 긍정적인 마음가짐으로 가볍게 즐기는 것이 올바른 복권 이용 문화입니다.</p>
+      </article>
+    </section>
+
+    <section class="form-container">
+      <h2>제휴 및 문의</h2>
+      <p>비즈니스 제휴나 기능 개선에 대한 의견이 있으시면 아래 양식을 통해 보내주세요.</p>
+      <form action="https://formspree.io/f/xlgvkvbp" method="POST">
+        <div class="form-group">
+          <label for="email">이메일 주소</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">문의 내용</label>
+          <textarea id="message" name="message" rows="4" placeholder="문의하실 내용을 입력해주세요." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">문의 보내기</button>
+      </form>
+    </section>
+
+    <section id="comments-container" class="comments-container">
+      <h2>커뮤니티 의견</h2>
+      <div id="disqus_thread"></div>
+      <script>
+          (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://product1-4.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <ul class="footer-links">
+        <li><a href="/about.html">사이트 소개</a></li>
+        <li><a href="/privacy.html">개인정보처리방침</a></li>
+        <li><a href="#articles">이용가이드</a></li>
+      </ul>
+      <p class="copyright">&copy; 2026 LottoPremium. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="/main.js"></script>
 </body>
