@@ -30,7 +30,7 @@ function toggleTheme() {
 function updateThemeButton(theme) {
   const btn = document.getElementById('themeToggle');
   if (btn) {
-    btn.textContent = theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+    btn.textContent = theme === 'dark' ? '☀️ 라이트 모드' : '🌙 다크 모드';
   }
 }
 

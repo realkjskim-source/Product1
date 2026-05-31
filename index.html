@@ -1,35 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Premium Lotto Generator</title>
+  <title>프리미엄 로또 번호 생성기</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
   <div class="lotto-container">
-    <h1>Lotto Generator</h1>
+    <h1>로또 번호 생성기</h1>
     <div id="lottoNumbers" class="numbers">
-      <!-- Numbers will appear here -->
+      <!-- 번호가 여기에 표시됩니다 -->
     </div>
     <div class="controls">
-      <button onclick="generateLottoNumbers()">Generate Numbers</button>
-      <button id="themeToggle" class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+      <button onclick="generateLottoNumbers()">번호 생성하기</button>
+      <button id="themeToggle" class="theme-toggle" onclick="toggleTheme()">🌙 다크 모드</button>
     </div>
   </div>
 
   <div class="form-container">
-    <h2>Partnership Inquiry</h2>
+    <h2>제휴 및 문의</h2>
     <form action="https://formspree.io/f/xlgvkvbp" method="POST">
       <div class="form-group">
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+        <label for="email">이메일 주소</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
       </div>
       <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" placeholder="How can we work together?" required></textarea>
+        <label for="message">문의 내용</label>
+        <textarea id="message" name="message" rows="4" placeholder="문의하실 내용을 입력해주세요." required></textarea>
       </div>
-      <button type="submit" class="submit-btn">Send Inquiry</button>
+      <button type="submit" class="submit-btn">문의 보내기</button>
     </form>
   </div>
 
