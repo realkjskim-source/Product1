@@ -115,3 +115,63 @@ button:active {
   background-color: var(--button-bg);
   color: white;
 }
+
+.form-container {
+  background-color: var(--container-bg);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--shadow-color);
+  margin-top: 40px;
+  max-width: 400px;
+  width: 90%;
+  transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+  border-color: #444;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--button-bg);
+}
+
+.submit-btn {
+  background-color: var(--accent-color) !important;
+}
+
+.submit-btn:hover {
+  filter: brightness(1.1);
+}
